@@ -6,13 +6,30 @@ html {
     padding: 0;
     font-family: Arial;
     background-color: black;
+    color: white;
 }
 
-h1 {
+
+#title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 40px;
     animation-name: colorchange;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+}
+
+.footer {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.footer a {
+    color: #53ecff;
 }
 
 @keyframes colorchange {
@@ -35,4 +52,3 @@ h1 {
     100% {
         color: rgb(31, 102, 255);
     }
-}
